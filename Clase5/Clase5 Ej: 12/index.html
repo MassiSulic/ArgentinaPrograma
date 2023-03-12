@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja</title>
+</head>
+<style>
+    .a {
+        display: inline-block;
+    }
+</style>
+<body>
+    <h1>Formulario de pedido Caja</h1>
+
+    <form class="Ej12Form">
+        <p>Nombre del cliente:</p>
+        <input class="input" type="text" placeholder="Nombre">
+        <br>
+        <p class="a">Material de la caja:</p>
+        <select class="select">
+            <option>Madera</option>
+            <option>Carton</option>
+            <option>Ecologica</option>
+        </select>
+        <p>Dimensiones de la caja:</p>
+        <label><input type="checkbox"  name="opcion" value="Pequeña">Pequeña</label><br>
+        <label><input type="checkbox"  name="opcion" value="Mediana">Mediana</label><br>
+        <label><input type="checkbox"  name="opcion" value="Grande">Grande</label>
+        <p>Comentarios</p>
+        <input type="text" class="Comentarios"><br>
+        <button class="Boton" type="button" onclick="obtenerValor()">Enviar</button>
+        <p class="Resultado"></p>
+
+        <script src="Script.js"></script>
+    </form>
+</body>
+</html>
