@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .uno {
+            background-color: black;
+            position: relative;
+            height: 300px;
+            width: 300px;
+            
+        }
+        .Test {
+            background-color: aliceblue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .dos {
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+        }
+        .hijo1 {
+            width: 25%;
+            background-color: cadetblue;
+        }
+        .hijo2 {
+            width: 25%;
+            background-color: aquamarine;
+        }
+        .hijo3 {
+            width: 25%;
+            background-color: azure;
+        }
+
+        .tres {
+            background-color: brown;
+            display: flex;
+            flex-wrap: wrap;
+            height: 300px;
+            align-content: space-around;
+        }
+        .box {
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 50px;
+            margin: 24px;
+        }
+
+        .cuatro {
+            background-color: bisque;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .boxx {
+            background-color: blueviolet;
+            color: chartreuse;
+            width: 50px;
+            height: 50px;
+            margin: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .align-self-center {
+            align-self:normal;
+        }
+
+        .cinco {
+            background-color: yellowgreen;
+            display: flex;
+            height: 200px;
+        }
+        .cinc0 {
+            height: 24px;
+            width: 24px;
+            background-color: violet;
+            margin: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hola1{
+            flex-grow: 10;
+        }
+        .hola2 {
+            flex-shrink: 10;
+        }
+        .hola3 {
+            flex-basis: 20;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="uno">
+        Hola
+        <div class="Test">
+            Hola
+        </div>
+    </div>
+
+    <div class="dos">
+        <div class="hijo1">1</div>
+        <div class="hijo2">2</div>
+        <div class="hijo3">3</div>
+    </div>
+
+    <div class="tres">
+        <div class="box align-self-center">1</div><br>
+        <div class="box">2</div><br>
+        <div class="box">3</div><br>
+        <div class="box">4</div>
+    </div>
+
+    <div class="cuatro">
+        <div class="boxx">Box 1</div>
+        <div class="boxx">Box 2</div>
+        <div class="boxx align-self-center">Box 3</div>
+        <div class="boxx">Box 4</div>
+        <div class="boxx">Box 5</div>
+      </div>
+
+      <div class="cinco">
+        <div class="cinc0 hola1">1</div>
+        <div class="cinc0 hola2">2</div>
+        <div class="cinc0 hola3">3</div>
+    </div>
+      
+</body>
+</html>
