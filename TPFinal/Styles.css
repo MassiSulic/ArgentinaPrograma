@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Arial';
+    --color-animation: #F9F5EB;
 }
 
 main {
@@ -41,11 +42,120 @@ main {
 .secciones {
     display: flex;
     justify-content: space-around;
-    width: 250px;
     list-style: none;
     padding: 0;
 }
-
+.seccion1 {
+    margin: 0 8px;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+.seccion1 {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: var(--color-animation);
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--color-animation);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--color-animation);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--color-animation);
+}
+.seccion1:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--color-animation))
+}
+.seccion2 {
+    margin: 0 8px;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+.seccion2 {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: var(--color-animation);
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--color-animation);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--color-animation);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--color-animation);
+}
+.seccion2:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--color-animation))
+}
+.seccion3 {
+    margin: 0 8px;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+.seccion3 {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--color-animation);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--color-animation);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--color-animation);
+}
+.seccion3:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--color-animation))
+}
 
 
 .inicio {
