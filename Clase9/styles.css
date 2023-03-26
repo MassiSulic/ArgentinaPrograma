@@ -1,0 +1,106 @@
+:root {
+  /* FontSize */
+  --Title: 28px;
+  --InputsEnlacesBoton: 16px;
+
+  /* Colores */
+  --TituloBG: #22193f;
+  --Incons: #6a2a83;
+  --EnlaceyBoton: #e21982;
+  --BordeInputs: #c4c4c4;
+}
+body {
+  /* background-image: url(./img/ondas.svg); */
+  background-color: black;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.img1 {
+    width: 100%;
+}
+
+.test1 {
+  padding: 0px;
+}
+.test2 {
+    padding: 0px;
+    background-color: white;
+    width: 300px;
+}
+
+.login{
+    height: 100%;
+    width: 800px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+.title {
+    font-size: 28px;
+    font-weight: bold;
+}
+.email {
+    position: relative;
+    margin-top: 48px;
+}
+.email1 {
+    height: 34px;
+    width: 100%;
+    border-radius: 24px;
+    border: 1px var(--BordeInputs) solid;
+}
+.bi {
+    position: absolute;
+    z-index: 999;
+    top: 10px;
+    left: 5px;
+    color: #6a2a83;
+    margin-left: 12px;
+} 
+.test {
+    position: absolute;
+    margin-left: 40px;
+    top: 5px;
+    font-size: 16px;
+}
+.test3 {
+    position: absolute;
+    margin-left: 40px;
+    top: 5px;
+    font-size: 16px;
+}
+
+.passwrd {
+    position: relative;
+    margin-top: 12px;
+}
+.passwrd1 {
+    height: 34px;
+    width: 100%;
+    border-radius: 24px;
+    border: 1px var(--BordeInputs) solid;
+}
+.bi {
+    position: absolute;
+    z-index: 999;
+    top: 10px;
+    left: 5px;
+    color: #6a2a83;
+} 
+
+.Enlace {
+    display: flex;
+    justify-content: end;
+    color: #e21982;
+    margin-bottom: 48px;
+}
+
+.btn {
+    border-radius: 12px;
+    background-color: #e21982;
+    color: white;
+}
