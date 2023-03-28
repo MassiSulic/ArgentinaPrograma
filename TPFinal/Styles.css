@@ -191,6 +191,7 @@ main {
 }
 
 .integrantes {
+    /* flex-wrap: wrap; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

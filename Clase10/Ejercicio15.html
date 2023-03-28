@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas con jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+  <table id="tabla1" border="1">
+    <tr>
+      <td>Texto 1</td>
+      <td>Texto 2</td>
+      <td>Texto 3</td>
+    </tr>
+    <tr>
+      <td>Texto 4</td>
+      <td>Texto 5</td>
+      <td>Texto 6</td>
+    </tr>
+    <tr>
+      <td>Texto 7</td>
+      <td>Texto 8</td>
+      <td>Texto 9</td>
+    </tr>
+  </table>
+
+  <table id="tabla2" border="1">
+    <tr>
+      <td>Texto A</td>
+      <td>Texto B</td>
+      <td>Texto C</td>
+    </tr>
+    <tr>
+      <td>Texto D</td>
+      <td>Texto E</td>
+      <td>Texto F</td>
+    </tr>
+    <tr>
+      <td>Texto G</td>
+      <td>Texto H</td>
+      <td>Texto I</td>
+    </tr>
+  </table>
+
+  <button id="boton">Cambiar contenido de la tabla 1</button>
+
+  <script>
+    $(document).ready(function() {
+      $("#boton").click(function() {
+        $("#tabla1 td").text("-");
+      });
+    });
+  </script>
+</body>
+</html>

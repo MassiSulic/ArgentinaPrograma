@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Ocultar y mostrar párrafos con jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <style>
+    #my-div {
+      width: 500px;
+      height: 300px;
+      border: 1px solid black;
+      padding: 10px;
+    }
+    #my-div p {
+      margin: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    #hidden-div {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="my-div">
+    <p>Texto 1</p>
+    <p>Texto 2</p>
+    <p>Texto 3</p>
+  </div>
+
+  <div id="hidden-div">
+    <p>Texto oculto</p>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $("#my-div").click(function() {
+        $(this).fadeOut("slow", function() {
+          $("#hidden-div").fadeIn("slow");
+        });
+      });
+
+      $("#hidden-div").click(function() {
+        $(this).fadeOut("slow", function() {
+          $("#my-div").fadeIn("slow");
+        });
+      });
+
+      $("#my-div p").click(function() {
+        $(this).hide();
+      });
+    });
+  </script>
+</body>
+</html>
+</body>
+</html>
