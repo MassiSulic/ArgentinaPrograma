@@ -1,19 +1,26 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
+:root {
+    --regular: 400;
+    --bold:700;
+    --black: 900;
+
+    --principal: #f4f4f2;
+    --secundario: #5b88a5;
+    --detalles: #d4cdc5;
+    --texto: #191013;
 }
 
 body {
-    font-family: 'Arial';
-    --color-animation: #F9F5EB;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--principal);
 }
 
-main {
+/* main {
     background-image: url(./img/Gradient-Background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-}
+} */
 
 .header {
     position: fixed;
@@ -28,7 +35,6 @@ main {
     align-items: center;
     height: 52px;
     padding: 12px;
-    color: white;
 }
 
 .logo {
@@ -56,8 +62,8 @@ main {
 }
 .seccion1 {
     --border-right: 6px;
-    --text-stroke-color: rgba(255,255,255,0.6);
-    --animation-color: var(--color-animation);
+    --text-stroke-color: var(--texto);
+    --animation-color: var(--principal);
     --fs-size: 2em;
     letter-spacing: 3px;
     text-decoration: none;
@@ -93,8 +99,8 @@ main {
 }
 .seccion2 {
     --border-right: 6px;
-    --text-stroke-color: rgba(255,255,255,0.6);
-    --animation-color: var(--color-animation);
+    --text-stroke-color: var(--texto);
+    --animation-color: var(--principal);
     --fs-size: 2em;
     letter-spacing: 3px;
     text-decoration: none;
@@ -130,8 +136,8 @@ main {
 }
 .seccion3 {
     --border-right: 6px;
-    --text-stroke-color: rgba(255,255,255,0.6);
-    --animation-color: #37FF8B;
+    --text-stroke-color: var(--texto);
+    --animation-color: var(--principal);
     --fs-size: 2em;
     letter-spacing: 3px;
     text-decoration: none;
@@ -165,7 +171,6 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -186,38 +191,91 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 48px;
     grid-area: n2;
     color: #F9F5EB;
 }
 
 .integrantes {
-    /* flex-wrap: wrap; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    flex-wrap: wrap;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    margin-top: 12px;
-    width: 100%;
-    height: 100vh;
+
+    /* height: 450px; */
+
+    background-color: var(--principal);
+
 }
+
 .participantes {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 350px;
-    width: 350px;
+
+    margin: 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.pastilla {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 12px;
-    background-color: #EBC7E6;
+    margin: 12px;
+
+    width: 200px;
+    height: 40px;
+
+    background-color: var(--detalles);
 }
-.participante1 {
-    bottom: 180px;
+.informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    width: 300px;
+    height: 150px;
+
+    color: var(--texto);
 }
-.participante3 {
-    top: 180px;
+
+.accion {
+    background-color: #1693a7;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 200px;
+}
+.accion h3 {
+    margin-right: 12px;
+    font-weight: var(--black);
+    font-size: 24px;
+
+    color: #f8fcc1;
+}
+.accion button {
+    width: 150px;
+    height: 40px;
+
+    background-color: transparent;
+
+    border: solid 2px #c8cf02;
+    border-radius: 22px;
+
+    color: var(--principal);
+
+    cursor:pointer;
+}
+.accion button a {
+    text-decoration: none;
+    color: #c8cf02;
 }
 
 .contenido {
@@ -229,21 +287,47 @@ main {
     "n1 n1 n2 n2"
     "n3 n3 n4 n4"
     "n3 n3 n4 n4";
-    margin-top: 12px;
+
     gap: 24px;
     height: 100vh;
+
     margin-left: 5%;
     margin-right: 5%;
     padding-bottom: 12px;
+
+    padding: 12px;
+    padding-bottom: 80px;
+
 }
 
 .contenedor {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #BFACE2;
     border-radius: 12px;
+
+    text-align: center;
+    padding: 24px;
 }
+
+.pastilla1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin: 12px;
+
+    width: 200px;
+    height: 40px;
+
+    background-color: var(--detalles);
+}
+.informacion1{
+    color: var(--texto);
+    text-align: center;
+}
+
 .contenido1 {
     grid-area: n1;
 }
@@ -257,13 +341,45 @@ main {
     grid-area: n4;
 }
 
-.footer {
+.cats {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+footer {
     background-color: rgb(0, 43, 91);
-    margin-top: 12px;
-    width: 100%;
-    height: 250px;
     color: whitesmoke;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+
+    height: 350px;
+}
+
+.Formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+
+}
+.Formulario input {
+    width: 253px;
+    height: 30px;
+    margin-bottom: 12px;
+}
+.Formulario button {
+    margin-top: 12px;
+
+    width: 150px;
+    height: 40px;
+
+    background-color: transparent;
+
+    border: solid 2px #c8cf02;
+    border-radius: 22px;
+
+    color: var(--principal);
+
+    cursor:pointer;
 }

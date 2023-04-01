@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./Styles.css">
 
-    <title>Document</title>
+    <title>Resumenes</title>
 </head>
 <body>
     <div class="main">
@@ -42,44 +47,103 @@
 
             <div class="inicio">
                 <h1>¡Bienvenido!</h1>
-                <h1>Resumen: HTML, CSS y JS</h1>
+                <h1>Recursos sobre: HTML, CSS y JS</h1>
             </div>
 
             <section class="integrantes">
                 <div class="participantes participante1">
-                    <h1>Nombre</h1>
-                    <p>Informacion</p>
+                    <div class="pastilla">
+                        <h1>Massimo Sulic</h1>
+                    </div>
+                    <div class="informacion">
+                        <p>Hola &#128513;, Estudio programacion y actualmente estoy buscando trabajo. Me encanta la musica y toco el violin en mi tiempo libre.</p>
+                    </div>
                 </div>
                 <div class="participantes participante2">
-                    <h1>Nombre</h1>
-                    <p>Informacion</p>
+                    <div class="pastilla">
+                        <h1>Massimo Sulic</h1>
+                    </div>
+                    <div class="informacion">
+                        <p>Hola &#128513;, Estudio programacion y actualmente estoy buscando trabajo. Me encanta la musica y toco el violin en mi tiempo libre.</p>
+                    </div>
                 </div>
                 <div class="participantes participante3">
-                    <h1>Nombre</h1>
-                    <p>Informacion</p>
+                    <div class="pastilla">
+                        <h1>Massimo Sulic</h1>
+                    </div>
+                    <div class="informacion">
+                        <p>Hola &#128513;, Estudio programacion y actualmente estoy buscando trabajo. Me encanta la musica y toco el violin en mi tiempo libre.</p>
+                    </div>
                 </div>
+            </section>
+
+            <section class="accion">
+                <h3>Si quieres los resumenes en pdf rellena el siguiente formulario</h3>
+                <button><a href="./wizard.html">¡Haz Click Aqui!</a></button>
             </section>
 
             <article class="contenido">
                 <section class=" contenedor contenido1">
-                    Resumen
+                    <div class="pastilla1">
+                        <h1>HTML</h1>
+                    </div>
+                    <div class="informacion1">
+                        <p>HTML (Hypertext Markup Language) es un lenguaje de marcado que se utiliza para crear y estructurar contenido web. Es la base de la mayoría de los sitios web y es esencial para la creación de páginas web estáticas y dinámicas.
+                            <br>
+                            <br>
+                            HTML utiliza una serie de etiquetas o elementos para indicar cómo se debe presentar el contenido. Estas etiquetas definen la estructura de la página web y permiten a los desarrolladores indicar cómo se deben mostrar diferentes tipos de contenido, como texto, imágenes, videos, enlaces, formularios, entre otros.</p>
+                    </div>
                 </section>
+
                 <section class="contenedor contenido2">
-                    Resumen
+                    <div class="pastilla1">
+                        <h1>CSS</h1>
+                    </div>
+                    <div class="informacion1">
+                        <p>CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para describir cómo se presentan los documentos HTML y XHTML. Con CSS, se pueden definir aspectos como el diseño, los colores, las fuentes y otros estilos visuales de una página web.
+                            <br>
+                            <br>
+                            CSS permite separar el contenido de un documento HTML de su presentación visual, lo que hace que los sitios web sean más accesibles, fáciles de mantener y escalables. En lugar de aplicar estilos directamente en el código HTML, los estilos se definen en un archivo CSS separado y se vinculan al documento HTML.</p>
+                    </div>
                 </section>
+
                 <section class="contenedor contenido3">
-                    Resumen
+                    <div class="pastilla1">
+                        <h1>JavaScript</h1>
+                    </div>
+                    <div class="informacion1">
+                        <p>JavaScript (comúnmente abreviado como "JS") es un lenguaje de programación interpretado que se utiliza principalmente en el desarrollo web. Fue creado originalmente para agregar interactividad y comportamiento a las páginas web, pero desde entonces ha evolucionado para su uso en muchos otros contextos.
+                            <br>
+                            <br>
+                            JavaScript se ejecuta en el navegador web del usuario y permite que las páginas web sean dinámicas y reactivas al usuario, lo que significa que los elementos de la página pueden cambiar en respuesta a la interacción del usuario, sin la necesidad de volver a cargar toda la página.
+                            <br>
+                            <br>
+                            JavaScript es un lenguaje de programación orientado a objetos, lo que significa que las funciones y los objetos se pueden utilizar para crear y manipular datos. Además, JavaScript es un lenguaje interpretado, lo que significa que el código se ejecuta en el momento en que se carga la página web.</p>
+                    </div>
                 </section>
+
                 <section class="contenedor contenido4">
-                    Resumen
+                    <img alt="" class="cats">
                 </section>
             </article>
         </main>
 
-        <footer class="footer">
-            Footer
+        <footer>
+                <div class="legal">
+                    <h3>Terminos y condiciones</h3>
+                    <h3>Contactanoss</h3>
+                </div>
+                
+                <div class="Formulario">
+                    <input type="text" placeholder="Nombre" class="name">
+                    <input type="text" placeholder="Correo" class="email">
+                    <textarea placeholder="Mensaje" cols="30" rows="10"></textarea>
+                    <button class="button">Enviar</button>
+                </div>
         </footer>
 
     </div>
+
+    <script src="./Scripts.js"></script>
 </body>
 </html>
